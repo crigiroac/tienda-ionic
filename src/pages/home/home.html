@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Productos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor ="let producto of productos" (click)="irPaginaDetalle(producto)">
+    <img [src]="producto.imagen" alt="">
+  </ion-card>
+</ion-content>
